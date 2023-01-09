@@ -4,7 +4,7 @@ import "./scss/app.scss";
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <ModalWindow />
     </div>
   );
