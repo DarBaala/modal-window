@@ -6,10 +6,12 @@ const ModalWindow = () => {
     <div className={styles.root}>
       <div className={styles.call_me}>
         <form action="">
-          <h3>Мы позвоним!</h3>
-          <p>
-            А может и нет, ведь в этом мире нельзя быть ни в чем уверенным!
-          </p>
+          <div className={styles.title}>
+            <h3>Мы позвоним!</h3>
+            <p>
+              А может и нет, ведь в этом мире нельзя быть ни в чем уверенным!
+            </p>
+          </div>
           <p>Телефон</p>
           <input type="text" />
           <p>Имя</p>
