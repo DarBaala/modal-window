@@ -5,6 +5,12 @@
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in;
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+  pointer-events: none;
   margin: 0;
   padding: 0;
   .call_me {
@@ -13,6 +19,7 @@
     background-color: white;
     padding: 30px;
     border-radius: 5px;
+    position: relative;
     form {
       display: flex;
       flex-direction: column;
@@ -24,15 +31,9 @@
         border: none;
         padding: 10px;
         font-size: 16px;
-        width: 200px;
+        width: 100%;
         border-radius: 5px;
         background-color: aliceblue;
-        -webkit-transition: all 0.15s ease-in-out;
-        transition: all 0.15s ease-in-out;
-        &:last-child {
-          width: 100%;
-          background-color: red;
-        }
       }
       button {
         margin-top: 30px;
@@ -40,6 +41,16 @@
         font-size: 16px;
         border: none;
         cursor: pointer;
+      }
+      textarea {
+        margin-bottom: 8px;
+        border: none;
+        padding: 15px 10px;
+        font-size: 16px;
+        width: 100%;
+        border-radius: 5px;
+        resize: none;
+        background-color: aliceblue;
       }
     }
   }
